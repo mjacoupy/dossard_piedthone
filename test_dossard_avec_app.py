@@ -85,19 +85,16 @@ logos = Image.open("images/Logos.png")
 # #######################################################################################################################
 #                                              # === STREAMLIT === #
 # #######################################################################################################################
-st.markdown(
-    """
-    <style>
-    .reportview-container {
-        background: url("https://images.app.goo.gl/LFCobouKtT7oZ7Qv7")
+page_bg_img = '''
+<style>
+    body {
+    background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+    background-size: cover;
     }
-    .sidebar .sidebar-content {
-        background: url("https://images.app.goo.gl/LFCobouKtT7oZ7Qv7")
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+</style>
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
 
 st.title("La PiEdTHONe 2022")
 st.header("Génération du dossard")
