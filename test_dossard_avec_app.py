@@ -90,7 +90,7 @@ with col1:
     lastname = st.text_input(label="Nom de famille*")
     
 with col2:    
-    course = st.sidebar.selectbox('Selection de la distance', ['Distance 1', 'Distance 2', 'Distance 3'], index=1)
+    course = st.selectbox('Selection de la distance', ['Distance 1', 'Distance 2', 'Distance 3'], index=1)
     
 st.warning("Le nom de famille sert uniquement à la génération du numéro de dossard personnel. L'information n'est si stockée ni conservée")
 
