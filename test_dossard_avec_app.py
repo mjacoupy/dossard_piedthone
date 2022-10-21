@@ -92,9 +92,9 @@ with col1:
 with col2:    
     course = st.selectbox('Selection de la distance', ['Distance 1', 'Distance 2', 'Distance 3'], index=1)
     
-st.warning("Le nom de famille sert uniquement à la génération du numéro de dossard personnel. L'information n'est si stockée ni conservée")
+st.warning("*Le nom de famille sert uniquement à la génération du numéro personnel. L'information n'est ni stockée ni conservée")
 
-button = st.button("Génération du numéro")
+button = st.button("Génération du dossard")
 
     
 if firstname and lastname and button:
@@ -114,5 +114,9 @@ if firstname and lastname and button:
 
     st.image(personnalized_dossard)
 
-
-        
+    btn = st.download_button(
+            label="Télécharger le dossard",
+            data=personnalized_dossard,
+            file_name="flower.jpg",
+            mime="image/jpg"
+          )
