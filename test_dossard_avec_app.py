@@ -110,9 +110,10 @@ personnalized_dossard = import_image(model,
 
 st.image(personnalized_dossard)
 
+with open(personnalized_dossard, "rb") as file:
 btn = st.download_button(
         label="Télécharger le dossard",
-        data=model,
-        file_name="flower.jpg",
-        mime="image/jpg"
+        data=file,
+        file_name="flower.png",
+        mime="image/png"
       )
