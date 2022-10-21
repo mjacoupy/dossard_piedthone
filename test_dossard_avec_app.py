@@ -100,7 +100,7 @@ with col1:
 with col2:    
     course = st.selectbox('Selection de la distance', ['Distance 1', 'Distance 2', 'Distance 3'], index=0)
     
-st.warning("*Le nom de famille sert uniquement à la génération du numéro personnel. L'information n'est ni stockée ni conservée")
+st.warning("*Le nom de famille sert uniquement à la génération du numéro personnel. L'information n'est ni stockée ni conservée.")
 
     
 doss_nb = dossard_number_generator(firstname = str(unidecode.unidecode(firstname).lower()),  
@@ -120,6 +120,6 @@ with st.expander("Voir un apperçu du dossard"):
 btn = st.download_button(
         label="Télécharger le dossard",
         data=pil_to_string(personnalized_dossard),
-        file_name="dossard-piedthone-2022.jpg",
+        file_name=firstname+"-dossard-piedthone-2022.jpg",
         mime="image/jpg"
       )
