@@ -115,3 +115,5 @@ with st.expander("Voir apperçu du dossard"):
 #         file_name="flower.png",
 #         mime="image/jpeg"
 #       )
+
+st.write(type(personnalized_dossard))
