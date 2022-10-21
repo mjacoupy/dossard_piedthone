@@ -119,3 +119,8 @@ with st.expander("Voir un apperçu du dossard"):
 #       )
 
 st.write(type(personnalized_dossard))
+
+open_cv_image = np.array(personnalized_dossard) 
+open_cv_image = open_cv_image[:, :, ::-1].copy() 
+
+st.write(type(open_cv_image))
