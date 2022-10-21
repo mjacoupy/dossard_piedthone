@@ -110,7 +110,9 @@ if firstname and lastname and button:
                                          firstname, 
                                          doss_nb,
                                          course)
-    personnalized_dossard.show()
+    # personnalized_dossard.show()
+
+    st.image(personnalized_dossard)
 
 
         
