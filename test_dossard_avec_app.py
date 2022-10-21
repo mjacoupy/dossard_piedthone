@@ -79,7 +79,7 @@ model = Image.open("images/Modele.jpg")
 #                                              # === STREAMLIT === #
 # #######################################################################################################################
 st.title("Piedthone 2021")
-st.subtitle("Génération du dossard")
+st.header("Génération du dossard")
 st.markdown("""---""")
 
 
