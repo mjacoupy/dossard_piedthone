@@ -112,7 +112,7 @@ st.image(personnalized_dossard)
 
 btn = st.download_button(
         label="Télécharger le dossard",
-        data=personnalized_dossard,
+        data=model,
         file_name="flower.jpg",
         mime="image/jpg"
       )
