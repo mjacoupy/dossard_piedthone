@@ -78,8 +78,8 @@ model = Image.open("images/Modele.jpg")
 # #######################################################################################################################
 #                                              # === STREAMLIT === #
 # #######################################################################################################################
-
-st.title("Génération du dossard")
+st.title("Piedthone 2021")
+st.subtitle("Génération du dossard")
 st.markdown("""---""")
 
 
@@ -106,7 +106,7 @@ personnalized_dossard = import_image(model,
                                      firstname, 
                                      doss_nb,
                                      course)
-with st.expander("Voir apperçu du dossard"):
+with st.expander("Voir un apperçu du dossard"):
     st.image(personnalized_dossard)
 
 # btn = st.download_button(
