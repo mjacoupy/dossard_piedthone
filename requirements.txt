@@ -1,4 +1,5 @@
 opencv-python-headless
 matplotlib
+Unidecode
 streamlit==1.8.1
 
