@@ -83,7 +83,7 @@ st.title("La PiEdTHONe 2022")
 st.header("Génération du dossard")
 st.markdown("""---""")
 
-st.sidebar.image(logo)
+st.sidebar.image(logos)
 
 
 col1, col2 = st.columns([1,1])
