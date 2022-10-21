@@ -64,6 +64,12 @@ def dossard_number_generator(firstname, lastname, size):
     number = hexadecimal_to_decical(footprint, size)
     return number    
 
+def pil_to_string(img):
+    open_cv_image = np.array(img) 
+    open_cv_image = open_cv_image[:, :, ::-1].copy() 
+    img_str = cv2.imencode('.jpg', open_cv_image)[1].tostring()
+    return img_str
+
  
 # #######################################################################################################################
 #                                              # === CONSTANTES === #
@@ -111,21 +117,9 @@ personnalized_dossard = import_image(model,
 with st.expander("Voir un apperçu du dossard"):
     st.image(personnalized_dossard)
 
-
-st.write(type(personnalized_dossard))
-
-open_cv_image = np.array(personnalized_dossard) 
-open_cv_image = open_cv_image[:, :, ::-1].copy() 
-
-st.write(type(open_cv_image))
-
-img_str = cv2.imencode('.jpg', open_cv_image)[1].tostring()
-
-st.write(type(img_str))
-
 btn = st.download_button(
         label="Télécharger le dossard",
-        data=img_str,
+        data=pil_to_string(personnalized_dossard),
         file_name="dossard-piedthone-2022.jpg",
         mime="image/jpg"
       )
