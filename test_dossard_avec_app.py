@@ -74,6 +74,7 @@ title_font_number = ImageFont.truetype("font/Agane.ttf", 175)
 title_font_course = ImageFont.truetype("font/Agane.ttf", 35)
 
 model = Image.open("images/Modele.jpg")
+logos = Image.open("images/Logos.jpg")
 
 # #######################################################################################################################
 #                                              # === STREAMLIT === #
@@ -82,7 +83,7 @@ st.title("La PiEdTHONe 2022")
 st.header("Génération du dossard")
 st.markdown("""---""")
 
-st.sidebar.image(model)
+st.sidebar.image(logo)
 
 
 col1, col2 = st.columns([1,1])
