@@ -69,9 +69,9 @@ def dossard_number_generator(firstname, lastname, size):
 #                                              # === CONSTANTES === #
 # #######################################################################################################################
 
-title_font_name = ImageFont.truetype("font\Agane.ttf", 100)
-title_font_number = ImageFont.truetype("font\Agane.ttf", 175)
-title_font_course = ImageFont.truetype("font\Agane.ttf", 35)
+title_font_name = ImageFont.truetype("font/Agane.ttf", 100)
+title_font_number = ImageFont.truetype("font/Agane.ttf", 175)
+title_font_course = ImageFont.truetype("font/Agane.ttf", 35)
 
 model = Image.open("images/Modele.jpg")
 
