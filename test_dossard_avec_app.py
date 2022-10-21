@@ -78,10 +78,11 @@ model = Image.open("images/Modele.jpg")
 # #######################################################################################################################
 #                                              # === STREAMLIT === #
 # #######################################################################################################################
-st.title("Piedthone 2021")
+st.title("La PiEdTHONe 2022")
 st.header("Génération du dossard")
 st.markdown("""---""")
 
+st.sidebar.image(model)
 
 
 col1, col2 = st.columns([1,1])
@@ -90,7 +91,7 @@ with col1:
     lastname = st.text_input(label="Nom de famille*")
     
 with col2:    
-    course = st.selectbox('Selection de la distance', ['Distance 1', 'Distance 2', 'Distance 3'], index=1)
+    course = st.selectbox('Selection de la distance', ['Distance 1', 'Distance 2', 'Distance 3'], index=0)
     
 st.warning("*Le nom de famille sert uniquement à la génération du numéro personnel. L'information n'est ni stockée ni conservée")
 
