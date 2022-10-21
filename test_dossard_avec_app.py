@@ -94,29 +94,25 @@ with col2:
     
 st.warning("*Le nom de famille sert uniquement à la génération du numéro personnel. L'information n'est ni stockée ni conservée")
 
-button = st.button("Génération du dossard")
-
     
-if firstname and lastname and button:
-    
-    doss_nb = dossard_number_generator(firstname = str(unidecode.unidecode(firstname).lower()),  
-                              lastname = str(unidecode.unidecode(lastname).lower()), 
-                              size = 4)
+doss_nb = dossard_number_generator(firstname = str(unidecode.unidecode(firstname).lower()),  
+                          lastname = str(unidecode.unidecode(lastname).lower()), 
+                          size = 4)
 
-    personnalized_dossard = import_image(model, 
-                                         title_font_name, 
-                                         title_font_number, 
-                                         title_font_course, 
-                                         firstname, 
-                                         doss_nb,
-                                         course)
-    # personnalized_dossard.show()
+personnalized_dossard = import_image(model, 
+                                     title_font_name, 
+                                     title_font_number, 
+                                     title_font_course, 
+                                     firstname, 
+                                     doss_nb,
+                                     course)
+# personnalized_dossard.show()
 
-    st.image(personnalized_dossard)
+st.image(personnalized_dossard)
 
-    btn = st.download_button(
-            label="Télécharger le dossard",
-            data=personnalized_dossard,
-            file_name="flower.jpg",
-            mime="image/jpg"
-          )
+btn = st.download_button(
+        label="Télécharger le dossard",
+        data=personnalized_dossard,
+        file_name="flower.jpg",
+        mime="image/jpg"
+      )
