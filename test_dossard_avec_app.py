@@ -70,6 +70,19 @@ def pil_to_string(img):
     img_str = cv2.imencode('.jpg', open_cv_image)[1].tostring()
     return img_str
 
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://cdn.pixabay.com/photo/2019/04/24/11/27/flowers-4151900_960_720.jpg");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
  
 # #######################################################################################################################
 #                                              # === CONSTANTES === #
@@ -85,16 +98,8 @@ logos = Image.open("images/Logos.png")
 # #######################################################################################################################
 #                                              # === STREAMLIT === #
 # #######################################################################################################################
-page_bg_img = '''
-<style>
-    body {
-    background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
-    background-size: cover;
-    }
-</style>
-'''
+add_bg_from_url() 
 
-st.markdown(page_bg_img, unsafe_allow_html=True)
 
 st.title("La PiEdTHONe 2022")
 st.header("Génération du dossard")
