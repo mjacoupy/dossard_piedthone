@@ -119,6 +119,10 @@ open_cv_image = open_cv_image[:, :, ::-1].copy()
 
 st.write(type(open_cv_image))
 
+img_str = cv2.imencode('.jpg', open_cv_image)[1].tostring()
+
+st.write(type(img_str))
+
 btn = st.download_button(
         label="Télécharger le dossard",
         data=open_cv_image,
