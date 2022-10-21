@@ -122,6 +122,6 @@ st.write(type(open_cv_image))
 btn = st.download_button(
         label="Télécharger le dossard",
         data=open_cv_image,
-        file_name="dossard-piedthone-2022.jpeg",
-        mime="image/jpeg"
+        file_name="dossard-piedthone-2022.jpg",
+        mime="image/jpg"
       )
