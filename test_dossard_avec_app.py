@@ -74,7 +74,7 @@ title_font_number = ImageFont.truetype("font/Agane.ttf", 175)
 title_font_course = ImageFont.truetype("font/Agane.ttf", 35)
 
 model = Image.open("images/Modele.jpg")
-logos = Image.open("images/Logos.jpg")
+logos = Image.open("images/Logos.png")
 
 # #######################################################################################################################
 #                                              # === STREAMLIT === #
