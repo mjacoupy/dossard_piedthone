@@ -75,7 +75,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://cdn.pixabay.com/photo/2019/04/24/11/27/flowers-4151900_960_720.jpg");
+             background-image: url("https://pixabay.com/fr/illustrations/contexte-moderne-ordinateur-1747775/");
              background-attachment: fixed;
              background-size: cover
          }}
@@ -98,7 +98,7 @@ logos = Image.open("images/Logos.png")
 # #######################################################################################################################
 #                                              # === STREAMLIT === #
 # #######################################################################################################################
-#add_bg_from_url() 
+add_bg_from_url() 
 
 
 st.title("La PiEdTHONe 2022")
