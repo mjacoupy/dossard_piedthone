@@ -110,18 +110,17 @@ st.markdown("""---""")
 st.sidebar.image(logos)
 
 
-# col1, col2 = st.columns([1,1])
-# with col1:
-#     firstname = st.text_input(label="Prénom ou Pseudo") 
-#     lastname = st.text_input(label="Nom de famille*")
-    
-# with col2:    
-#     course = st.selectbox('Selection de la distance', ['Distance 2 kms', 'Distance 4 kms', 'Distance 6 kms', 'Distance 10 kms'], index=0)
+col1, col2, col3 = st.columns([1,1,1])
+with col1:
+    firstname = st.text_input(label="Prénom ou Pseudo") 
 
-firstname = st.text_input(label="Prénom ou Pseudo") 
-lastname = st.text_input(label="Nom de famille*")
-course = st.selectbox('Selection de la distance', ['Distance 2 kms', 'Distance 4 kms', 'Distance 6 kms', 'Distance 10 kms'], index=0)
-    
+with col2:
+    lastname = st.text_input(label="Nom de famille*")
+ 
+with col3:    
+    course = st.selectbox('Selection de la distance', ['Distance 2 kms', 'Distance 4 kms', 'Distance 6 kms', 'Distance 10 kms'], index=0)
+
+
 st.warning("*Le nom de famille sert uniquement à la génération du numéro personnel. Aucune information n'est conservée.")
 
     
