@@ -35,9 +35,9 @@ def import_image(image, title_font_name, title_font_number, title_font_course, f
     course_text = course
     number_text = str(doss_nb)
     image_editable = ImageDraw.Draw(my_image)
-    image_editable.text((45,75), name_text, (0, 0, 0), font=title_font_name)
+    image_editable.text((55,75), name_text, (0, 0, 0), font=title_font_name)
     image_editable.text((440,330), number_text, (0, 0, 0), font=title_font_number)
-    image_editable.text((995,200), course_text, (0, 0, 0), font=title_font_course)
+    image_editable.text((985,200), course_text, (0, 0, 0), font=title_font_course)
     return my_image
    
 # Création de l'empreinte SHA512 (128 caractères héxadécimaux)
