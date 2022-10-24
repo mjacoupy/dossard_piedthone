@@ -120,10 +120,6 @@ with col2:
 with col3:    
     course = st.selectbox('Selection de la distance', ['Distance 2 kms', 'Distance 4 kms', 'Distance 6 kms', 'Distance 10 kms'], index=0)
 
-
-st.warning("*Le nom de famille sert uniquement à la génération du numéro personnel. Aucune information n'est conservée.")
-
-    
 doss_nb = dossard_number_generator(firstname = str(unidecode.unidecode(firstname).lower()),  
                           lastname = str(unidecode.unidecode(lastname).lower()), 
                           size = 4)
@@ -144,3 +140,5 @@ btn = st.download_button(
         file_name=firstname+"-dossard-piedthone-2022.jpg",
         mime="image/jpg"
       )
+
+st.warning("*Le nom de famille sert uniquement à la génération du numéro personnel. Aucune information n'est conservée.")
