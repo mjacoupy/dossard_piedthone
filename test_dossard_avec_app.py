@@ -35,7 +35,7 @@ def import_image(image, title_font_name, title_font_number, title_font_course, f
     number_text = str(doss_nb)
     image_editable = ImageDraw.Draw(my_image)
     image_editable.text((15,75), name_text, (0, 0, 0), font=title_font_name)
-    image_editable.text((480,375), number_text, (0, 0, 0), font=title_font_number)
+    image_editable.text((450,370), number_text, (0, 0, 0), font=title_font_number)
     image_editable.text((475,300), course_text, (0, 0, 0), font=title_font_course)
     return my_image
    
@@ -89,7 +89,7 @@ def add_bg_from_url():
 # #######################################################################################################################
 
 title_font_name = ImageFont.truetype("font/Agane.ttf", 100)
-title_font_number = ImageFont.truetype("font/Agane.ttf", 175)
+title_font_number = ImageFont.truetype("font/Agane.ttf", 200)
 title_font_course = ImageFont.truetype("font/Agane.ttf", 35)
 
 model = Image.open("images/Modele.jpg")
