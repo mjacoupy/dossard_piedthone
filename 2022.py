@@ -134,11 +134,14 @@ personnalized_dossard = import_image(model,
 with st.expander("Voir un apperçu du dossard", True):
     st.image(personnalized_dossard)
 
-btn = st.download_button(
-        label="Télécharger le dossard",
-        data=pil_to_string(personnalized_dossard),
-        file_name=firstname+"-dossard-piedthone-2022.jpg",
-        mime="image/jpg"
-      )
+col1, col2, col3 = st.columns([1,1,1])
+
+with col2:
+    btn = st.download_button(
+            label="Télécharger le dossard",
+            data=pil_to_string(personnalized_dossard),
+            file_name=firstname+"-dossard-piedthone-2022.jpg",
+            mime="image/jpg"
+          )
 
 st.warning("*Le nom de famille sert uniquement à la génération du numéro personnel. Aucune information n'est conservée.")
