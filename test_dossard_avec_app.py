@@ -75,7 +75,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://pixabay.com/fr/illustrations/contexte-moderne-ordinateur-1747775/");
+             background-image: url("https://www.123freevectors.com/yellow-and-white-polygon-background-graphic-design-illustration-131833/");
              background-attachment: fixed;
              background-size: cover
          }}
