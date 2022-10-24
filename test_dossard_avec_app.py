@@ -35,7 +35,7 @@ def import_image(image, title_font_name, title_font_number, title_font_course, f
     number_text = str(doss_nb)
     image_editable = ImageDraw.Draw(my_image)
     image_editable.text((15,75), name_text, (0, 0, 0), font=title_font_name)
-    image_editable.text((400,370), number_text, (0, 0, 0), font=title_font_number)
+    image_editable.text((400,350), number_text, (0, 0, 0), font=title_font_number)
     image_editable.text((1025,200), course_text, (0, 0, 0), font=title_font_course)
     return my_image
    
