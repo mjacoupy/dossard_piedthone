@@ -114,7 +114,7 @@ with col1:
     lastname = st.text_input(label="Nom de famille*")
     
 with col2:    
-    course = st.selectbox('Selection de la distance', ['Distance 1', 'Distance 2', 'Distance 3'], index=0)
+    course = st.selectbox('Selection de la distance', ['Distance 2 kms', 'Distance 4 kms', 'Distance 6 kms', 'Distance 10 kms'], index=0)
     
 st.warning("*Le nom de famille sert uniquement à la génération du numéro personnel. L'information n'est ni stockée ni conservée.")
 
