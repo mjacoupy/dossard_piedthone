@@ -17,6 +17,7 @@ import numpy as np
 import unidecode
 from PIL import Image, ImageFont, ImageDraw
 import streamlit as st
+import base64
 
 # #######################################################################################################################
 #                                              # === FUNCTIONS === #
