@@ -131,7 +131,7 @@ personnalized_dossard = import_image(model,
                                      firstname, 
                                      doss_nb,
                                      course)
-with st.expander("Voir un apperçu du dossard"):
+with st.expander("Voir un apperçu du dossard", True):
     st.image(personnalized_dossard)
 
 btn = st.download_button(
