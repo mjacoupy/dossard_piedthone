@@ -118,7 +118,7 @@ with col2:
     lastname = st.text_input(label="Nom de famille*")
  
 with col3:    
-    course = st.selectbox('Selection de la distance', ['Distance 2 kms', 'Distance 4 kms', 'Distance 6 kms', 'Distance 10 kms'], index=0)
+    course = st.selectbox('Sélection de la distance', ['Distance 2 kms', 'Distance 4 kms', 'Distance 6 kms', 'Distance 10 kms'], index=0)
 
 doss_nb = dossard_number_generator(firstname = str(unidecode.unidecode(firstname).lower()),  
                           lastname = str(unidecode.unidecode(lastname).lower()), 
