@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Autre
+Modele.pptx
+Modele.jpg
+Agane.ttf
+test_dossard_sans_app.py
