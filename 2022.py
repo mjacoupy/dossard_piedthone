@@ -105,7 +105,6 @@ add_bg_from_local('images/fond.png')
 
 st.title("La PiEdTHONe 2022")
 st.header("Génération du dossard")
-st.markdown("""---""")
 
 st.sidebar.image(logos)
 
