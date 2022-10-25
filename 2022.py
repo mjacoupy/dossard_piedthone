@@ -103,7 +103,7 @@ logos = Image.open("images/Logos.png")
 add_bg_from_local('images/fond.png')
 
 
-st.title("La PiEdTHONe 2022")
+st.title("La Piedthone 2022")
 st.header("Génération du dossard")
 
 st.sidebar.image(logos)
