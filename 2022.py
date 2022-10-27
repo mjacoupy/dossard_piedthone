@@ -105,6 +105,7 @@ add_bg_from_local('images/fond.png')
 
 st.title("La Piedthone 2022")
 st.header("Génération du dossard")
+st.sucess("**Attention** : Si vous avez inscrits plusieurs participant, merci de repeter l'étape de création de dossard pour chacun d'entre eux")
 
 st.sidebar.image(logos)
 
